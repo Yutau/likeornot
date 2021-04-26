@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: likeornot
+  datasource:
+    url: jdbc:mysql://47.101.128.218:3306/baby
+    username: root
+    password: "ycg312007y"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+swagger:
+  enable: true

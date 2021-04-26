@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>LikeOrNot——Food Reference</title>
+
+    <!--图标库 可无视-->
+    <link rel='stylesheet' href='css/font-awesome.min.css'>
+
+    <!--核心样式-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        a:link { text-decoration: none;color: #006a71}
+        a:active { text-decoration:blink}
+        a:hover { text-decoration:underline;color: deepskyblue}
+        a:visited { text-decoration: none;color: #006a71}
+    </style>
+
+
+</head>
+<body style="overflow: hidden">
+
+<div class="container">
+    <div class="card"></div>
+    <div class="card">
+        <h1 class="title">LikeOrNot</h1>
+        <form id="food">
+            <div class="input-container">
+                <input type="#{type}" id="food_name" class="name"/>
+                <label for="#{label}">食物名称</label>
+                <div class="bar"></div>
+            </div>
+            <!-- <div class="input-container">
+              <input type="#{type}" id="#{label}" required="required" />
+              <label for="#{label}">密码</label>
+              <div class="bar"></div>
+            </div> -->
+            <div class="button-container" >
+                <button id="button" type = "button"><span>检测</span></button>
+            </div>
+            <br>
+            <div style="bottom:0px;left:0px;right:0px;margin:auto;position: absolute;text-align: center;font-size: 10px;">
+                <p>
+                    <a href="home.html" class="link">@SpringHome</a><br>
+                    <a href="https://loveyutau.space/" >©Copyright 2021 – Yutau's Work</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <div class="card alt">
+        <div class="toggle"></div>
+        <h1 class="title">检测结果
+            <div class="close"></div>
+        </h1>
+        <form>
+            <div class="input-container">
+                <input type="#{type}" id="#{label}" readonly="readonly" disabled="disabled" />
+                <label for="#{label}" id="if_like">是否喜欢</label>
+                <div class="bar"></div>
+            </div>
+            <!-- <div class="input-container">
+              <input type="#{type}" id="#{label}" required="required" />
+              <label for="#{label}">密码</label>
+              <div class="bar"></div>
+            </div> -->
+            <div class="input-container">
+                <input type="#{type}" id="#{label}" readonly="readonly" disabled="disabled" />
+                <label for="#{label}" id="reason">理由</label>
+                <div class="bar"></div>
+            </div>
+            <!-- <div class="button-container">
+              <button><span>提交注册</span></button>
+            </div> -->
+        </form>
+    </div>
+</div>
+<script src='js/jquery.min.js'></script>
+<script src="js/jquery.serializejson.js"></script>
+<script src="js/script.js"></script>
+<!-- <div style="text-align:center;">
+<p>更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div> -->
+
+</body>
+</html>
+
